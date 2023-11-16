@@ -26,3 +26,10 @@ const opc = [
         devilfruit: "yes"
     }
 ];
+const data = opc.filter((gender) => gender.stringGenders.includes('man')).forEach((gender) => console.log(gender));
+function check() {
+    document.getElementById("myCheck").checked = true;
+}
+function uncheck() {
+    document.getElementById("myCheck").checked = false;
+}
