@@ -33,3 +33,10 @@ function check() {
 function uncheck() {
     document.getElementById("myCheck").checked = false;
 }
+
+filterSelection("all")
+function filterSelection(c) {
+    var x, i;
+    x =
+    document.getElementsByClassName("filterDiv");
+}

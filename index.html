@@ -8,6 +8,21 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
+    <div class="btncontainer">
+        <button class="btn" onclick="filterSelection('all')">Show All</button>
+        <button class="btn" onclick="filterSelection('men')">Men</button>
+        <button class="btn" onclick="filterSelection('women')">Women</button>
+        <button class="btn" onclick="filterSelection('devilfruit')">Devil Fruit Havers</button>
+    </div>
+    <div class="filtercontainer">
+        <div class ="filterDiv men">Luffy</div>
+        <div class ="filterDiv men">Zoro</div>
+        <div class ="filterDiv men">Sanji</div>
+        <div class ="filterDiv women">Nami</div>
+        <div class ="filterDiv women">Robin</div>
+        <div class ="filterDiv devilfruit">Luffy</div>
+        <div class ="filterDiv devilfruit">Robin</div>
+    </div>
     <div class="menu-items">
         <div class="m1">
             <h3>Luffy?</h3>
@@ -16,7 +31,7 @@
         </div>
     </div>
     <form action="" id="form">
-    <button class="man">Man</button>
+    <button class="man">Man</button> have to prevent default if works
 </form>
 
     <script type="module" src="js/main.js"></script>
