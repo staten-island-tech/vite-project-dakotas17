@@ -34,9 +34,12 @@ function uncheck() {
     document.getElementById("myCheck").checked = false;
 }
 
-filterSelection("all")
-function filterSelection(c) {
-    var x, i;
-    x =
-    document.getElementsByClassName("filterDiv");
-}
+
+function section(){
+    DOMSelectors.container.insertAdjacentHTML("afterbegin", 
+    `<div class="section">
+    <button class = "remove">Remove</button>
+    <h1> ${opc.name.value}</h1>
+    <h2> ${opc.gender.value}</h2>
+    <h3> ${opc.crew.value}<h3></h3>
+</div>`)}
