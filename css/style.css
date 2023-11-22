@@ -20,14 +20,12 @@ body {
   box-shadow: 1rem 1rem 0.5rem 0.2rem #e0a8;
   margin: 3rem 3rem;
   transition: all 0.4s;
-  filter: blur(5px);
   object-fit: cover;
 }
 .m1:hover {
-    background-color: #79394e;
+    background-color: #e8b3c5;
   transform: scale(1.05);
   box-shadow: 1rem 1rem 0.5rem 0.2rem rgb(107, 0, 77);
-  filter: blur(0);
   .cardtitle, .cardpara{
     background-color: palevioletred;
   }
