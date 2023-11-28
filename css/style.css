@@ -60,3 +60,21 @@ body {
   background-color: darkslategrey;
   color: white;
 }
+
+
+:root {
+--light-pink: #2998ff
+--dark-pink: #125cc5
+
+
+--primary: var (--light pink)
+--secondary: var (--dark pink)
+}
+
+.hero{
+  background-color:var(--primary);
+}
+.main{
+  background-color:var(--secondary);
+  height: 90vh;
+}

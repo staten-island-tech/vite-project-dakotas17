@@ -1,6 +1,10 @@
 import "../css/style.css";
 import {opc} from "./menu"
 
+document.querySelector(".btn").addEventListener("click", function() {
+    
+})
+
 console.log(opc);
 
 
