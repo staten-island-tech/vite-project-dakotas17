@@ -2,7 +2,7 @@ import "../css/style.css";
 import {opc} from "./menu"
 
 document.querySelector(".btn").addEventListener("click", function() {
-    
+    document.body.classList.add("pink")
 })
 
 console.log(opc);
@@ -26,4 +26,10 @@ arr.forEach((opc) => {
     
     `)
 })
+}
+
+function addcards (arr){
+    arr.forEach(el) => {
+        DOMSelectors.con
+    }
 }

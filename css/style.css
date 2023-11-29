@@ -9,7 +9,7 @@ body {
     text-align: center;
 }
 .m1 {
-    background-color: palevioletred;
+  background-color: palevioletred;
   height: 50vh;
   width: 20%;
   display: flex;
