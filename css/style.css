@@ -63,12 +63,26 @@ body {
 
 
 :root {
---light-pink: #2998ff
---dark-pink: #125cc5
+--black: #000;
+--light-pink: pink;
+--dark-pink: rgb(223, 79, 215);
+--light-purple: rgb(129, 57, 129);
+--dark-purple: rgb(49, 8, 49);
+--gray: #252c30;
 
+/*intentions*/
+--primary: var(--light-pink);
+--secondary: var(--light-purple);
+}
 
---primary: var (--light pink)
---secondary: var (--dark pink)
+.dark{
+  --primary: var(--dark-pink);
+  --secondary: var(--dark-purple);
+}
+
+.light{
+  --primary: var(--light-pink);
+  --secondary: var(--light-purple);
 }
 
 .hero{
