@@ -70,9 +70,9 @@ body {
 --dark-purple: rgb(49, 8, 49);
 --gray: #252c30;
 
-/*intentions*/
+/*intentions
 --primary: var(--light-pink);
---secondary: var(--light-purple);
+--secondary: var(--light-purple);*/
 }
 
 .dark{
