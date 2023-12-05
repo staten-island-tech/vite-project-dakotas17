@@ -1,10 +1,13 @@
 import "../css/style.css";
-import {opc} from "./menu.js"
+import {opc} from "./menu.js";
 
 document.querySelector(".btn").addEventListener("click", function() {
     document.body.classList.add("pink")
 })
-
+document.querySelector("#app").innerHTML = `
+<h1>Hello??????</h1>
+<a href="https://vitejs.dev/guide/features.html" target="_blank">Documentation</a>
+`;
 console.log(opc);
 
 
