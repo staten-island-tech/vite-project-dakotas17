@@ -78,11 +78,15 @@ body {
 .dark{
   --primary: var(--dark-pink);
   --secondary: var(--dark-purple);
+  --h1color: var(--black);
+  --buttons: var(--gray);
 }
 
 .light{
   --primary: var(--light-pink);
   --secondary: var(--light-purple);
+  --h1color: var(--black);
+  --buttons: var(--gray);
 }
 
 .hero{

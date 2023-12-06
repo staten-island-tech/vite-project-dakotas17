@@ -34,6 +34,7 @@ arr.forEach((opc) => {
 Insert(opc)
 
 function filters(){
+    event.preventDefault();
     let buttons = document.querySelectorAll(".btn")
     buttons.forEach((btn) => buttons.addEventListener("click", function() {
         let category = btn.textContent.toLowerCase()
@@ -49,3 +50,20 @@ function filters(){
         DOMSelectors.con
     }
 } */
+
+//theme button
+document.getElementById("theme").addEventListener("click", function() {
+    if(document.body.classList.contains("light")){
+        document.body.classList.add("dark");
+        document.body.classList.remove("light");
+    } else{
+        document.body.classList.add("light")
+        document.body.classList.remove("dark")
+    }
+});
+
+DOMSelectors.form.addEventListener("click", function(event){
+    event.preventDefault();
+    removeCards();
+    filterButtons();
+})
