@@ -36,3 +36,4 @@ const opc = [
         description:"cool mysterious girl"
     }
 ];
+export {opc};

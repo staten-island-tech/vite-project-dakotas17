@@ -1,5 +1,6 @@
 import "../css/style.css";
 import {opc} from "./menu.js";
+import { DOMSelectors } from "./dom";
 
 document.querySelector(".btn").addEventListener("click", function() {
     document.body.classList.add("pink")
