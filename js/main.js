@@ -12,13 +12,12 @@ document.querySelector("#app").innerHTML = `
 console.log(opc);
 
 
-const data = opc.filter((man) => man.stringMan.includes(true)).forEach((man) => console.log(man));
-function check() {
-    document.getElementById("myCheck").checked = true;
-};
-function uncheck() {
-    document.getElementById("myCheck").checked = false;
-}
+const filterButtons = (buttons.forEach((buttons) => buttons.addEventListener("click", function(){
+    let type = buttons.textContent;
+    let newArr = Menu.filter((opc) => opc.type.includes(type));
+    removeCards();
+    addcards(newArr);
+})))
 
 
 function Insert(arr){
