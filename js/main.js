@@ -20,7 +20,7 @@ const filterButtons = (buttons.forEach((buttons) => buttons.addEventListener("cl
 })))
 
 
-function Insert(arr){
+function Insert(opc){
 arr.forEach((opc) => {
     document.querySelector(".container").insertAdjacentHTML("afterbegin",
     `<div class ="card">
@@ -32,6 +32,27 @@ arr.forEach((opc) => {
 });
 }
 Insert(opc)
+
+function section(){
+    DOMSelectors.container.insertAdjacentHTML("afterbegin", 
+    `<div class="section">
+    <button class = "remove">Remove</button>
+    <h1> ${opc.name.value}</h1>
+    <h2> ${DOMSelectors.lastName.value}</h2>
+    <img src= "${DOMSelectors.img.value}" alt="img" class="img"</h3>
+    <p></p>
+</div>`)}
+   section();
+
+
+
+
+
+
+
+
+
+
 
 function filters(){
     event.preventDefault();
