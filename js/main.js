@@ -34,12 +34,12 @@ arr.forEach((opc) => {
 Insert(opc)
 
 function section(){
-    DOMSelectors.container.insertAdjacentHTML("afterbegin", 
+    opc.container.insertAdjacentHTML("afterbegin", 
     `<div class="section">
     <button class = "remove">Remove</button>
     <h1> ${opc.name.value}</h1>
-    <h2> ${DOMSelectors.lastName.value}</h2>
-    <img src= "${DOMSelectors.img.value}" alt="img" class="img"</h3>
+    <h2> ${opc.lastName.value}</h2>
+    <img src= "${opc.img.value}" alt="img" class="img"</h3>
     <p></p>
 </div>`)}
    section();

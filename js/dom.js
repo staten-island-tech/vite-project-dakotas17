@@ -7,7 +7,7 @@ const DOMSelectors = {
     cards: document.getElementById(".cards"),
     Name: document.getElementById(".name"),
     Image: document.getElementById(".img"),
-    Age: document.getElementById(".price")
+    Age: document.getElementById(".age")
 };
 
 export {DOMSelectors};
