@@ -4,31 +4,51 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color: rgb(149, 75, 138);
+  background-color: #ff81d3;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --black: #000;
+  --light-pink: pink;
+  --dark-pink: rgb(223, 79, 215);
+  --light-purple: rgb(129, 57, 129);
+  --dark-purple: rgb(49, 8, 49);
+  --gray: #252c30;
+
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
+html,
 body {
   margin: 0;
   display: flex;
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+ 
+    background-color: #FF9CCE;
+    color: #56002F;
+    font-size: 20px;
 }
+.m1 {
+  background-color: palevioletred;
+  height: 50vh;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 1rem;
+  box-shadow: 1rem 1rem 0.5rem 0.2rem #e0a8;
+  margin: 3rem 3rem;
+  transition: all 0.4s;
+  object-fit: cover;
+}
+
+
 
 h1 {
   font-size: 3.2em;
@@ -87,49 +107,19 @@ button:focus-visible {
     color: #213547;
     background-color: #ffffff;
   }
-  a:hover {
-    color: #747bff;
-  }
+
   button {
     background-color: #f9f9f9;
   }
 }
 
 
-
-
-/* html,
-body {
-    background-color: #FF9CCE;
-    color: #56002F;
-    font-size: 20px;
-}
 .menu-items {
     color: #af005f;
     text-align: center;
 }
-.m1 {
-  background-color: palevioletred;
-  height: 50vh;
-  width: 20%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  border-radius: 1rem;
-  box-shadow: 1rem 1rem 0.5rem 0.2rem #e0a8;
-  margin: 3rem 3rem;
-  transition: all 0.4s;
-  object-fit: cover;
-}
-.m1:hover {
-    background-color: #e8b3c5;
-  transform: scale(1.05);
-  box-shadow: 1rem 1rem 0.5rem 0.2rem rgb(107, 0, 77);
-  .cardtitle, .cardpara{
-    background-color: palevioletred;
-  }
-}
+
+
 .filtercontainer {
   overflow: hidden;
 }
@@ -162,18 +152,6 @@ body {
 }
 
 
-:root {
---black: #000;
---light-pink: pink;
---dark-pink: rgb(223, 79, 215);
---light-purple: rgb(129, 57, 129);
---dark-purple: rgb(49, 8, 49);
---gray: #252c30;
-
-/*intentions
---primary: var(--light-pink);
---secondary: var(--light-purple);
-}
 
 .dark{
   --primary: var(--dark-pink);
@@ -195,4 +173,4 @@ body {
 .main{
   background-color:var(--secondary);
   height: 90vh;
-} */
+}
