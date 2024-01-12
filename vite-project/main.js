@@ -53,6 +53,10 @@ const newArr = {
 console.log(newArr);
 
 
+function addCards(arr){
+  arr.forEach
+}
+
 
 
 
