@@ -4,6 +4,7 @@ import { DOMSelectors } from './dom'
 
 
 function add(arr) {
+  remove();
   arr.forEach((bruh) => {
     DOMSelectors.container.insertAdjacentHTML("afterend",
     `

@@ -1,5 +1,5 @@
 const DOMSelectors = {
-    container: document.getElementById("container"),
+    container: document.querySelector("#container"),
     cards: document.querySelectorAll(".cards"),
    buttons: document.querySelectorAll(".btn"),
    All: document.getElementById("All"),
