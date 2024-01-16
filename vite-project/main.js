@@ -6,7 +6,7 @@ import { DOMSelectors } from './dom'
 function add(arr) {
   remove()
   arr.forEach((bruh) => {
-    DOMSelectors.container.insertAdjacentHTML("afterend",
+    DOMSelectors.container.insertAdjacentHTML("afterbegin",
     `
     <div class="card">
     <h3 class="character-name">${bruh.name}</h3>
@@ -17,8 +17,10 @@ function add(arr) {
     )
   });
 }
+
+
 add(opc);
-console.log(opc)
+console.log(opc) 
 
 //theming
 document.getElementById("Theme").addEventListener("click", function(){
@@ -36,25 +38,31 @@ function remove(){
 }
 
 
-
-let buttons= document.querySelectorAll(".btn")
-
-
-const filterbtns = (buttons.forEach((buttons) => buttons.addEventListener("click", function(){
-  let type = buttons.textContent;
-  let newArr = opc.filter((menu) => menu.type.includes(type));
-  remove();
-  add(newArr);
-})))
+let buttons= document.querySelectorAll(".btn-x")
 
 
 
+buttons.forEach((btn)=>{
+  btn.addEventListener("click", function(){
+    let type = btn.textContent;
+    console.log(type)
+    let newArr = opc.filter((menu) => menu.type.includes(type));
+    console.log(newArr)
+    remove();
+    console.log("after")
+    add(newArr);
+  })
+})
+
+
+
+/* 
 DOMSelectors.form.addEventListener("click", function(event){
   event.preventDefault();
   remove();
   filterbtns();
 })
-
+ */
 
 
 

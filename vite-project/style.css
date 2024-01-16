@@ -25,14 +25,16 @@ body {
 --secondary: var(--light-purple);
 --card: var(--light-purple);
 --h1color: var(--black);
---buttons: var(--gray)
+--buttons: var(--gray);
+--text-color: var(--black)
 }
 .darkmode{
   --primary: var(--dark-pink);
   --secondary: var(--dark-purple);
   --card: var(--dark-purple);
 --h1color: var(--black);
---buttons: var(--gray)
+--buttons: var(--gray);
+--text-color: var(--gray)
 }
 body{
   background-color: var(--primary);
@@ -76,6 +78,7 @@ h2{
   margin: 1rem auto;
   background-color: var(--card);
   border-radius: 1rem;
+color: var(--text-color)
 }
 .card-img{
   height: 70%;
