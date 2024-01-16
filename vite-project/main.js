@@ -4,7 +4,7 @@ import { DOMSelectors } from './dom'
 
 
 function add(arr) {
-  remove();
+  remove()
   arr.forEach((bruh) => {
     DOMSelectors.container.insertAdjacentHTML("afterend",
     `
@@ -13,7 +13,8 @@ function add(arr) {
     <h4 class="age">${bruh.age}</h4>
     <img src="${bruh.img}" alt="" class="card-img">
     </div>
-    `);
+    `,
+    )
   });
 }
 add(opc);
