@@ -30,9 +30,10 @@ if (document.body.classList.contains("lightmode")){
 });
 
 function remove(){
-  const clear = document.getElementById("container");
-  clear.innerHTML = ""
-};
+  DOMSelectors.container.innerHTML = "";
+}
+
+
 
 let buttons= document.querySelectorAll(".btn")
 
