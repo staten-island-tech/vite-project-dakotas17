@@ -3,22 +3,14 @@ import {opc} from './menu'
 import { DOMSelectors } from './dom'
 
 
-/* document.querySelector(".btn").addEventListener("click", function() {
-  document.body.classList.add("pink")
-})
-document.querySelector("#app").innerHTML = `
-<h1>Hello??????</h1>
-`;
-console.log(opc); */
-
 function add(arr) {
   arr.forEach((bruh) => {
-    DOMSelectors.container.insertAdjacentHTML("afterbegin",
+    DOMSelectors.container.insertAdjacentHTML("afterend",
     `
     <div class="card">
     <h3 class="character-name">${bruh.name}</h3>
-    <img src="${bruh.img}" alt="" class="cardpic">
     <h4 class="age">${bruh.age}</h4>
+    <img src="${bruh.img}" alt="" class="card-img">
     </div>
     `);
   });
@@ -27,38 +19,34 @@ add(opc);
 console.log(opc)
 
 //theming
-document.getElementById("theme").addEventListener("click", function (event){
-if (document.body.classList.contains("light")){
-  document.body.classList.add("dark");
-  document.body.classList.remove("light");
+document.getElementById("theme").addEventListener("click", function(){
+if (document.body.classList.contains("lightmode")){
+  document.body.classList.add("darkmode");
+  document.body.classList.remove("lightmode");
 } else {
-  document.body.classList.add("light");
-  document.body.classList.remove("dark")
+  document.body.classList.add("lightmode");
+  document.body.classList.remove("darkmode")
 }
 });
 
-let btns= DOMSelectors.buttons;
 
-const newArr = {
-  char: opc.filter((erm) => erm.type.includes("char")).map(
-    (erm) => erm
-  ),
-  gen: opc.filter((erm) => erm.type.includes("gen")).map(
-    (erm) => erm
-  ),
-  age: opc.filter((erm) => erm.type.includes("age")).map(
-    (erm) => erm
-  ),
-};
-console.log(newArr);
+let buttons= document.querySelectorAll(".btn")
+
+
+const filterbtns = (buttons.forEach((buttons) => buttons.addEventListener("click", function(){
+  let type = buttons.textContent;
+  let newArr = opc.filter((menu) => menu.type.includes(type));
+  remove();
+  add(newArr);
+})))
 
 
 
-
-
-
-
-
+DOMSelectors.form.addEventListener("click", function(event){
+  event.preventDefault();
+  remove();
+  filterbtns();
+})
 
 
 
