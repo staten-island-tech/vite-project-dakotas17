@@ -46,7 +46,7 @@ const filterbtns = (buttons.forEach((buttons) => buttons.addEventListener("click
 
 
 
-DOMSelectors.buttons.addEventListener("click", function(event){
+DOMSelectors.form.addEventListener("click", function(event){
   event.preventDefault();
   remove();
   filterbtns();
