@@ -19,7 +19,7 @@ add(opc);
 console.log(opc)
 
 //theming
-document.getElementById("theme").addEventListener("click", function(){
+document.getElementById("Theme").addEventListener("click", function(){
 if (document.body.classList.contains("lightmode")){
   document.body.classList.add("darkmode");
   document.body.classList.remove("lightmode");
